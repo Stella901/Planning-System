@@ -1,0 +1,102 @@
+ /* Body */
+ body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    background: beige;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(238, 56, 86);
+    padding: 30px;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #d1caca;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #2a9600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    background-color: white;
+    padding: 20px;
+    width: 500px;   /* Set width to 500px */
+    height: 500px;
+    overflow: auto;
+}
+
+#modalImage {
+max-width: 100%;
+max-height: 100%;
+object-fit: contain; /* Ensure image fits inside the modal without stretching */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #aaa;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+}
+
+
+    
+
+
+

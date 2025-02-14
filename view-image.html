@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Image</title>
+    <style>
+        /* Add some simple styling for the view page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            max-width: 80%;
+            max-height: 80%;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img id="image-view" src="" alt="Image">
+    </div>
+
+    <script>
+        // Get the image URL from the URL params
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageURL = urlParams.get('image');
+
+        // Set the image src to the passed image URL
+        if (imageURL) {
+            document.getElementById('image-view').src = imageURL;
+        } else {
+            alert('No image to display');
+        }
+    </script>
+</body>
+</html>
